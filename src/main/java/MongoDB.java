@@ -14,7 +14,7 @@ public class MongoDB {
     public static void MongoDB(){
         System.out.println("MongoDB");
         try{
-            MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
+            MongoClient mongoClient = MongoClients.create("mongodb://thekloras:QL2BFccHFsECDjU@cluster0-shard-00-00.limus.mongodb.net:27017,cluster0-shard-00-01.limus.mongodb.net:27017,cluster0-shard-00-02.limus.mongodb.net:27017/Cluster0?ssl=true&replicaSet=atlas-lu16yr-shard-0&authSource=admin&retryWrites=true&w=majority");
             MongoDatabase StudentasDB = mongoClient.getDatabase("studentas");
             try{
                 StudentasDB.createCollection("studentas");
